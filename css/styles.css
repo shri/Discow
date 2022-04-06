@@ -108,7 +108,7 @@ div.nav {
 /* header */
 #main {
 	padding-top: 60px;
-	background-image: linear-gradient(to right, rgba( 255,255,255, 0.5), rgba( 0,0,0, 0.0)),url('/images/discow_day.png'), url('/images/discow_day.png');
+	background-image: linear-gradient(to right, rgba( 255,255,255, 0.5), rgba( 0,0,0, 0.0)),url('../images/discow_day.png'), url('/images/discow_day.png');
 	height: 620px;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -232,7 +232,7 @@ div#donate {
 	background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
-    background: url('/images/bg.png');
+    background: url('../images/bg.png');
     height: 720px;
 }
 
