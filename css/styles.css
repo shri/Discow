@@ -1,0 +1,294 @@
+css reset*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* our css */
+
+body {
+	font-family: Inter;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+/* nav */
+
+div.nav {
+	position: fixed;
+	text-align: center;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	width: 100%;
+	background: linear-gradient(to right, #745c96, #a482a3, #616495, #9b5776, #a1adc3);
+	-webkit-animation:colorchange 20s infinite alternate;
+}
+
+.nav a {
+	display: inline;
+	color: #0f0e29;
+	padding: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 18px;
+}
+
+/* header */
+#main {
+	padding-top: 60px;
+	background-image: linear-gradient(to right, rgba( 255,255,255, 0.5), rgba( 0,0,0, 0.0)),url('/images/discow_day.png'), url('/images/discow_day.png');
+	height: 620px;
+	width: 100%;
+	background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+/* header text */
+
+#main h3 {
+	padding-left: 20px;
+	padding-top: 20px;
+	font-weight: 700;
+	font-size: 30px;
+	color: #0f0e29;
+/*	-webkit-animation:colorchange 20s infinite alternate;
+*/
+}
+
+#main p {
+	padding-left: 20px;
+	color: #101531;
+	max-width: 500px;
+}
+
+#main a {
+	color: white;
+}
+
+ @-webkit-keyframes colorchange {
+      0% {
+        
+        background-color: #745c96;
+      }
+      
+      10% {
+        
+        background-color: #a482a3;
+      }
+      
+      20% {
+        
+        background-color: #616495;
+      }
+      
+      30% {
+        
+        background-color: #745c96;
+      }
+      
+      40% {
+        
+        background-color: #9b5776;
+      }
+      
+      50% {
+        
+        background-color: #101531;
+      }
+      
+      60% {
+        
+        background-color: #a1adc3;
+      }
+      
+      70% {
+        
+        background-color: #616495;
+      }
+      80% {
+     
+        background-color: #9b5776;
+      }
+      
+      90% {
+     
+        background-color: #a482a3;
+      }
+      
+      100% {
+        
+        background-color: pink;
+      }
+    }
+
+/* deck */
+
+div#deck {
+	text-align: center;
+	background-color: black;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+#deck h2 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 30px;
+	color: white;
+/*	-webkit-animation:colorchange 20s infinite alternate;
+*/
+}
+
+#deck p {
+	padding-top: 20px;
+	text-align: center;
+	font-weight: 400;
+	font-size: 18px;
+	color: white;
+}
+
+#deck a {
+	color: white;
+}
+
+div#donate {
+	text-align: center;
+	background-color: black;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    background: url('/images/bg.png');
+    height: 720px;
+}
+
+#donate h2 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 30px;
+	color: black;
+/*	-webkit-animation:colorchange 20s infinite alternate;
+*/
+}
+
+#donate h4 {
+	padding-top: 40px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 18px;
+	color: black;
+/*	-webkit-animation:colorchange 20s infinite alternate;
+*/
+}
+
+#donate a {
+	color: #0f0e29;
+}
+
+#donate p {
+	text-align: center;
+	font-weight: 400;
+	font-size: 18px;
+	color: black;
+}
+
+#donate img {
+	padding-top: 20px;
+	text-align: center;
+	height: 200px;
+	width: 200px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+/* media queries */
+@media (max-width: 1200px){
+	.hide-mobile {
+		display: none;
+	}
+}
+
+@media (min-width: 1200px){
+	.show-mobile {
+		display: none;
+	}
+}
+
+
+
+
